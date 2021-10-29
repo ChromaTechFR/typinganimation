@@ -1,0 +1,2 @@
+# typinganimation
+Created with CodeSandbox
