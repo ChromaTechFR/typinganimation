@@ -1,0 +1,35 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-family: "Courier New", Courier, monospace;
+  width: max-content;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+h1::before {
+  background-color: white;
+  animation: typing 6s steps(5) forwards;
+}
+
+h1::after {
+  content: "";
+  width: 0.2em;
+  background: black;
+  animation: typing 6s steps(5) forwards;
+}
+
+@keyframes typing {
+  to {
+    left: 100%;
+  }
+}
